@@ -6,10 +6,10 @@ import torch
 # Watermark forgery. Averaging attack (Yang et al. NeurIPS 24) + WMCopier-style direct (Dong et al. NeurIPS 25).
 # Per-WM config below -- tweak alpha/method/sigma after checking leaderboard.
 
-DATASET_DIR = '../Dataset'
+DATASET_DIR = 'Dataset'
 CLEAN_DIR = os.path.join(DATASET_DIR, 'clean_targets')
 SOURCE_DIR = os.path.join(DATASET_DIR, 'watermarked_sources')
-OUTPUT_DIR = '../submission_temp'
+OUTPUT_DIR = 'submission_temp'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 WM_MAP = {
